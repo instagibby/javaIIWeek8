@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script>
+    function ChangeText(){
+      let userInputText = document.querySelector('#textInput').value;
+      document.querySelector('.changeText').innerText = userInputText;
+    }
+  </script>
+</head>
+<body>
+  <h1 class="changeText">Rawr</h1>
+  <label for="textInput">Type Text Here:</label>
+
+  <input type="text" id="textInput" name=textInput>
+  <br>
+  <br>
+  <button onClick='ChangeText()'>Change Text</button>
+</body>
+</html>
